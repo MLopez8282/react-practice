@@ -27,7 +27,7 @@ export const Navbar = () => {
 						<a
 							className="nav-text nav-link active pl-2 mr-3 text-info "
 							href="#">
-							Home <span class="sr-only">(current)</span>
+							Home <span className="sr-only">(current)</span>
 						</a>
 						<a
 							className="nav-text nav-link pl-2 mr-3 text-info"

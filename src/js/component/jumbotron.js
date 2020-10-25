@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
 const tagline = {
-	title: "Discover Miami",
-	text: "What are you waiting for?",
+	title: "Snorkel SoFLo",
+	text: "Your adventure awaits",
 	button: {
-		firstlabel: "Get Started",
-		secondlabel: "Watch Trailer"
+		firstlabel: "From The Beach ",
+		firsturl: "",
+		secondlabel: "From A Boat",
+		secondurl: "",
+		thirdlabel: "With Sharks",
+		thirdurl: ""
 	}
 };
 
@@ -13,26 +17,30 @@ export const Jumbotron = () => {
 	return (
 		<>
 			<div className="jumbotron  bg-dark">
-				<h1 className="jumbo-title display-4 d-flex justify-content-center">
-					{tagline.title}
-				</h1>
-				<p className="jumbo-text lead d-flex justify-content-center">
-					{tagline.text}
-				</p>
-				<a
-					className=" button-start btn btn-lg btn bg-transparent "
-					href="#"
-					role="button">
-					{tagline.button.firstlabel}
-				</a>
+				<video />
+				<h1 className="jumbo-title text-white ">{tagline.title}</h1>
+				<p className="jumbo-text lead text-white">{tagline.text}</p>
+				<div className="threebuttons">
+					<a
+						className=" button-beach btn btn-lg btn bg-transparent border border-white text-white"
+						href={tagline.button.firsturl}
+						role="button">
+						{tagline.button.firstlabel}
+					</a>
 
-				<a
-					className=" button-trailer btn  btn-lg btn bg-transparent "
-					href="#"
-					role="button">
-					{tagline.button.secondlabel}
-					<i className="far fa-play-circle pl-2" />
-				</a>
+					<a
+						className=" button-boat btn  btn-lg btn bg-transparent border border-white text-white"
+						href={tagline.button.secondurl}
+						role="button">
+						{tagline.button.secondlabel}
+					</a>
+					<a
+						className=" button-sharks btn  btn-lg btn bg-transparent border border-white text-white"
+						href={tagline.button.thirdurl}
+						role="button">
+						{tagline.button.thirdlabel}
+					</a>
+				</div>
 			</div>
 		</>
 	);

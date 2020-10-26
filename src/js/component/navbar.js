@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const Navbar = () => {
 	return (
 		<>
-			<nav className="navbar-color navbar navbar-expand-lg navbar-light bg-white  ">
+			<nav className="navbar-color navbar navbar-expand-lg navbar-light bg-white  fixed-top ">
 				<a className="navbar-brand" href="#">
 					<img
 						className="navbar-image"

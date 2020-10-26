@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BackgroundVideo } from "./backgroundVideo";
 
 const tagline = {
 	title: "Snorkel SoFLo",
@@ -17,7 +18,7 @@ export const Jumbotron = () => {
 	return (
 		<>
 			<div className="jumbotron  bg-dark">
-				<video />
+				<BackgroundVideo />
 				<h1 className="jumbo-title text-white ">{tagline.title}</h1>
 				<p className="jumbo-text lead text-white">{tagline.text}</p>
 				<div className="threebuttons">
